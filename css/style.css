@@ -130,3 +130,28 @@ ul li ul:focus {
     opacity: 1;
     display: block;
 }
+
+.temas-content{
+    float: unset;
+    margin-top: 15px;
+    
+}
+
+.temas-content button{
+    background-color: skyblue;
+    border-radius: 12px;
+    align-content: center;
+    
+}
+
+.temas-content button:hover{
+    background-color: rgb(19, 177, 66); 
+}
+
+.button-class{
+    width: 150px;
+}
+
+.button-class a{
+    text-decoration: none;
+}
