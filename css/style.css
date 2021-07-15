@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+}
+html {
+    height: 100%;
+}
+
+body{
+    background: white;
+min-height: 100%;
+}
+
+.grid-container > *{
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+header, nav, section, footer{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+header nav {
+    background: #8b909b;
+    overflow: hidden;
+}
+
+header img{
+   align-content: left;
+}
+
+
+nav ul{
+   list-style: none;
+}
+
+nav li{
+    float: left;
+}
+
+nav li a{
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+}
+
+nav li a:hover{
+    background: black;
+}
+
+.main .articles{
+    width: 70%;
+    float: left;
+    background: white;
+}
+
+aside{
+    width: 30%;
+    background: yellow;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+
+.header {
+    grid-area: header;
+    background-color:whitesmoke;
+}
+
+.navbar{
+    grid-area: navbar;
+    background-color: skyblue;
+    
+}
+
+.main{
+    grid-area: main;
+    background-color: lemonchiffon;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: skyblue;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: whitesmoke;
+}
+
+
+.grid-container{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+     "header"
+     "navbar"
+     "main"
+     "sidebar"
+     "footer";
+}
+
+.parrafo{
+    text-align: justify;
+    font-size: 20px;
+}
+
+#menu ul li ul {
+    
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+}
+
+#menu ul li:hover > ul, ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
